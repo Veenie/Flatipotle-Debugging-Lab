@@ -37,6 +37,7 @@ class App extends Component {
           <h1 className="ui block header">All Orders</h1>
           <div className="ui three cards">
             { orders }
+            {console.log(this.state.orders)}
           </div>
         </div>
       </div>

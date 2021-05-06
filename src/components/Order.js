@@ -9,7 +9,7 @@ class Order extends Component {
   }
 
   handleClick = () => {
-    this.setState({ isClicked: true})
+    this.state.isClicked = !this.state.isClicked
   }
 
   render() {
