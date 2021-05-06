@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
 import './App.css'
-import Form from './Form'
-import Order from './Order'
+import Form from './components/Form'
+import Order from './components/Order'
+
+//imports written incorrectly
 
 class App extends Component {
-  state: {
+  state = {
     orders: []
   }
+
+  //state was written incorrectly
 
   addOrder = (order) => {
     this.setState({
@@ -25,7 +29,9 @@ class App extends Component {
           <img src={ require('./images/logo.png') } className="App-logo" alt="logo" />
         </header>
 
-        <Form />
+        <Form addOrder={this.addOrder}/>
+
+        
 
         <div className="ui raised container segment">
           <h1 className="ui block header">All Orders</h1>
@@ -39,3 +45,5 @@ class App extends Component {
 }
 
 export default App
+
+//addOrder prop missing from Form

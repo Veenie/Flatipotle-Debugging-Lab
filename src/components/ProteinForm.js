@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 
-const ProteinForm = () => {
+
+//needed to pass in props
+const ProteinForm = (props) => {
   return (
     <Fragment>
       <h1><label htmlFor="protein">Protein</label></h1>
